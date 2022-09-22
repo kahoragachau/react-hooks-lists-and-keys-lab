@@ -3,11 +3,7 @@ import React from "react";
 function ProjectItem({ name, about, technologies }) {
   const technologiesArray = technologies.map((technology) => {
     console.log(technology)
-    return(
-      <div>
-        <span key={technology}>{technology}</span>
-       </div>
-       )
+    return (<span key={technology}>{technology}</span>)
   })
   return (
     <div className="project-item">
